@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.rem {
+  font-size: 1rem; }
+
+.px {
+  font-size: 16px; }
+
+h1, h3, a {
+  font-family: 'Dancing Script', cursive; }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 10rem;
+  justify-content: space-between;
+  background-image: url(/imagenes/prendas-de-moda.jpg); }
+  .header__title {
+    font-size: 4.2rem;
+    text-decoration: underline; }
+  .header__contenedor {
+    margin: 0.8rem 0rem 0rem 0.8rem; }
+    .header__contenedor__h3 {
+      font-size: 2.2rem;
+      margin: 0px;
+      text-decoration: double; }
+    .header__contenedor3 {
+      display: flex; }
+  .header__anchor {
+    color: black;
+    font-size: 2.3rem; }
+  .header__list {
+    display: flex;
+    gap: 2rem;
+    margin-right: 1.5rem;
+    list-style-type: none; }
+    .header__list__icono {
+      font-size: 1.5rem; }
