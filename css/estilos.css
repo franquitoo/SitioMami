@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +10,196 @@
 .px {
   font-size: 16px; }
 
-h1, h3, a {
-  font-family: 'Dancing Script', cursive; }
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'Poppins', sans-serif; }
 
-p {
-  font-family: 'Indie Flower', cursive; }
+.grid {
+  display: grid;
+  grid-template-columns: 77% 23%;
+  grid-template-rows: 21% 71% auto;
+  grid-template-areas: "header header" "main aside" "footer footer"; }
+
+.youtube__grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 12% 83% auto;
+  grid-template-areas: "header" "main" "footer"; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/imagenes/mamieverest.jpeg);
+  background-size: 100%;
+  grid-area: header; }
+  .header__contenedor1 {
+    padding: 0.6rem; }
+  .header__h3 {
+    text-align: center;
+    text-decoration: overline;
+    margin-top: 0.5rem; }
+  .header__logo {
+    height: 14rem;
+    width: 35rem; }
+  .header__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2.5rem; }
+  .header__anchor, .aside__anchor {
+    font-size: 1.1rem;
+    color: black; }
+
+/* Principio HEADER sub página youtube */
+.youtube__header {
+  grid-area: header; }
+
+.header__li {
+  font-size: 1.3rem; }
+
+.youtubeanchor {
+  font-size: 1.3rem; }
+
+.youtube__list {
+  margin-right: 4rem; }
+
+.main {
+  background-image: linear-gradient(to left, white, #3c96d1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; }
+  .main__contenedor {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .main__tilde {
+    font-size: 1rem;
+    margin-right: 3px; }
+
+#carouselExampleCaptions {
+  width: 50rem; }
+
+.carrouseltext {
+  color: black; }
+
+.carrouseltextp {
+  color: black;
+  font-size: 1.2rem;
+  background-color: #4591c4;
+  border-radius: 1rem; }
+
+/* Principio Youtube main*/
+.youtube__main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: linear-gradient(to right, #11aee2, #feffff); }
+
+.iframe {
+  width: 20rem;
+  height: 13rem; }
+  .iframe__h3 {
+    text-align: center; }
+
+.megacontenedores {
+  display: flex;
+  flex-direction: column; }
+
+.contenedortedx {
+  text-align: center; }
+
+.h1__contenedor {
+  text-align: center;
+  padding: 2rem; }
+  .h1__contenedor__text {
+    font-size: 4rem;
+    text-decoration: underline;
+    background-color: #0d7eca; }
+
+.tedxvideo {
+  width: 35rem;
+  height: 25rem; }
+
+.supercontenedores {
+  display: flex;
+  justify-content: space-evenly; }
+
+.contenedores__medios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.aside {
+  grid-area: aside;
+  background-image: linear-gradient(to right, white, #9abdd4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.3rem; }
+  .aside__img {
+    height: 10rem;
+    width: 10rem; }
+  .aside__p {
+    text-align: center; }
+  .aside__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .aside__h3 {
+    text-align: center; }
+  .aside .cc {
+    width: 13rem; }
+  .aside__contenedor {
+    background-color: #539ccc;
+    border-radius: 1rem; }
+    .aside__contenedorm {
+      padding: 0.5rem; }
+  .aside__anchor {
+    font-size: 1.7rem; }
+  .aside__icon {
+    font-size: 1.3rem; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, #2b2a2a, #868788); }
+  .footer__Img {
+    height: 5rem;
+    width: 5rem; }
+  .footer__anchor {
+    font-size: 3rem;
+    color: white; }
+  .footer__div {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem; }
+  .footer__h3 {
+    color: white;
+    margin: 1rem 0rem 1rem 0rem;
+    text-decoration: underline;
+    text-align: center; }
+  .footer__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .footer__li {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: #66a0f7; }
+  .footer__icon {
+    margin-right: 0.3rem; }
+  .footer__contenedor2 {
+    display: flex;
+    gap: 1rem; }
+  .footer .ft {
+    width: 11rem; }
+
+.youtube__footer {
+  grid-area: footer; }
