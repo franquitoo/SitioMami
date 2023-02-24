@@ -39,56 +39,104 @@
     grid-area: main;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    background-image: linear-gradient(to right, rgb(17, 174, 226), rgb(254, 255, 255));
+    background-image: linear-gradient(to right, white, rgb(144, 193, 212));
+    gap: 1rem;
 
+    &__h1{
+        margin: 1rem;
+        font-size: 2rem;
+        text-align: center;
+        padding: 0.1rem;
+        border-radius: 1rem;
+        background-image: linear-gradient(to left, rgb(227, 238, 252), rgb(120, 175, 199));
+        
+    }
+
+    &__h2{
+        margin: 1rem;
+        padding: 0.5rem;
+        text-decoration: underline;
+        background-image: linear-gradient(to Left, rgba(35, 106, 199, 0.384), rgb(77, 165, 180));
+        
+        &__right{
+            margin: 1rem;
+            padding: 0.5rem;
+            text-decoration: underline;
+            background-image: linear-gradient(to Right, rgba(35, 106, 199, 0.384), rgb(77, 165, 180));
+        }
+    }
+
+    @mixin gap{
+        gap: 1rem;
+    }
+
+    &__div1{
+        text-align: center;
+        @include gap;
+    }
+
+    &__div2{
+        display: flex;
+        flex-direction: column;
+        @include gap;
+    }
+
+    &__div3{
+        display: flex;
+        flex-direction: column;
+        @include gap;
+    }
+
+    &__div4{
+        display: flex;
+        flex-direction: column;
+        @include gap;
+    }
+
+    &__div5{
+        @extend .youtube__main__div4;
+    }
+}
+
+.dobleiframecontenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .iframe{
     width: 20rem;
     height: 13rem;
 
+    &super{
+        width: 35rem;
+        height: 23rem;
+    }
+
+    &contenedor{
+        display: flex;
+        justify-content: space-evenly;
+
+        &h3{
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 0.1rem;
+            border-radius: 1rem;
+            background-image: linear-gradient(to left, rgb(227, 238, 252), rgb(120, 175, 199));
+        }
+    }
+
     &__h3{
-        text-align: center;
+        text-align: center;      
     }
 }
 
-.megacontenedores{
-    display: flex;
-    flex-direction: column;
+.deportistadiv{
+    text-align: end;
 }
 
-.contenedortedx{
-    text-align: center;
-}
-
-.h1__contenedor{
-    text-align: center;
-    padding: 2rem;
-
-    &__text{
-        font-size: 4rem;
-        text-decoration: underline;
-        background-color: rgb(13, 126, 202);
-        
-    }
-}
-
-.tedxvideo{
-    width: 35rem;
-    height: 25rem;
-}
-
-.supercontenedores{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.contenedores__medios{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.divulgadordiv{
+    @extend .deportistadiv;
 }
 
 
