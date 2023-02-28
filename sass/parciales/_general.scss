@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p, a, li{
 .grid{
     display: grid;
     grid-template-columns: 77% 23%;
-    grid-template-rows: 21% 71% auto;
+    grid-template-rows: 22% 71% auto;
     grid-template-areas: "header header"
                          "main aside"
                          "footer footer";
@@ -34,4 +34,6 @@ h1, h2, h3, h4, h5, h6, p, a, li{
                          "footer";
     
 }
+
+/* FINAL GENERAL */
 

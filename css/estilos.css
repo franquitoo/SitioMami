@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 .grid {
   display: grid;
   grid-template-columns: 77% 23%;
-  grid-template-rows: 21% 71% auto;
+  grid-template-rows: 22% 71% auto;
   grid-template-areas: "header header" "main aside" "footer footer"; }
 
 .youtube__grid {
@@ -25,6 +24,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   grid-template-rows: 12% 84% auto;
   grid-template-areas: "header" "main" "footer"; }
 
+/* FINAL GENERAL */
 .header {
   display: flex;
   justify-content: space-between;
@@ -49,19 +49,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   .header__anchor, .aside__anchor {
     font-size: 1.1rem;
     color: black; }
-
-/* Principio HEADER sub página youtube */
-.youtube__header {
-  grid-area: header; }
-
-.header__li {
-  font-size: 1.3rem; }
-
-.youtubeanchor {
-  font-size: 1.3rem; }
-
-.youtube__list {
-  margin-right: 4rem; }
 
 .main {
   background-image: linear-gradient(to left, white, #3c96d1);
@@ -89,72 +76,6 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   font-size: 1.2rem;
   background-color: #4591c4;
   border-radius: 1rem; }
-
-/* Principio Youtube main*/
-.youtube__main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(to right, white, #90c1d4);
-  gap: 1rem; }
-  .youtube__main__h1 {
-    margin: 1rem;
-    font-size: 2rem;
-    text-align: center;
-    padding: 0.1rem;
-    border-radius: 1rem;
-    background-image: linear-gradient(to left, #e3eefc, #78afc7); }
-  .youtube__main__h2 {
-    margin: 1rem;
-    padding: 0.5rem;
-    text-decoration: underline;
-    background-image: linear-gradient(to Left, rgba(35, 106, 199, 0.384), #4da5b4); }
-    .youtube__main__h2__right {
-      margin: 1rem;
-      padding: 0.5rem;
-      text-decoration: underline;
-      background-image: linear-gradient(to Right, rgba(35, 106, 199, 0.384), #4da5b4); }
-  .youtube__main__div1 {
-    text-align: center;
-    gap: 1rem; }
-  .youtube__main__div2 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; }
-  .youtube__main__div3 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; }
-  .youtube__main__div4, .youtube__main__div5 {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; }
-
-.dobleiframecontenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; }
-
-.iframe {
-  width: 20rem;
-  height: 13rem; }
-  .iframesuper {
-    width: 35rem;
-    height: 23rem; }
-  .iframecontenedor {
-    display: flex;
-    justify-content: space-evenly; }
-    .iframecontenedorh3 {
-      font-size: 1.1rem;
-      text-align: center;
-      padding: 0.1rem;
-      border-radius: 1rem;
-      background-image: linear-gradient(to left, #e3eefc, #78afc7); }
-  .iframe__h3 {
-    text-align: center; }
-
-.deportistadiv, .divulgadordiv {
-  text-align: end; }
 
 .aside {
   grid-area: aside;
@@ -225,5 +146,118 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   .footer .ft {
     width: 11rem; }
 
+/* FINAL INDEX */
+.youtube__header {
+  grid-area: header; }
+
+.header__li {
+  font-size: 1.3rem; }
+
+.youtubeanchor {
+  font-size: 1.3rem; }
+
+.youtube__list {
+  margin-right: 4rem; }
+
+.youtube__main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, white, #90c1d4);
+  gap: 1rem; }
+  .youtube__main__h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to left, #e3eefc, #78afc7); }
+  .youtube__main__h2 {
+    margin: 1rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+    background-image: linear-gradient(to Left, rgba(35, 106, 199, 0.384), #4da5b4); }
+    .youtube__main__h2__right {
+      margin: 1rem;
+      padding: 0.5rem;
+      text-decoration: underline;
+      background-image: linear-gradient(to Right, rgba(35, 106, 199, 0.384), #4da5b4); }
+  .youtube__main__div1 {
+    text-align: center;
+    gap: 1rem; }
+  .youtube__main__div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .youtube__main__div3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .youtube__main__div4, .youtube__main__div5 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+
+.dobleiframecontenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.iframe {
+  width: 20rem;
+  height: 13rem; }
+  .iframesuper {
+    width: 35rem;
+    height: 23rem; }
+  .iframecontenedor {
+    display: flex;
+    justify-content: space-evenly; }
+    .iframecontenedorh3 {
+      font-size: 1.1rem;
+      text-align: center;
+      padding: 0.1rem;
+      border-radius: 1rem;
+      background-image: linear-gradient(to left, #e3eefc, #78afc7); }
+  .iframe__h3 {
+    text-align: center; }
+
+.deportistadiv {
+  text-align: end; }
+
 .youtube__footer {
   grid-area: footer; }
+
+/* FINAL YOUTUBE */
+.propmain {
+  display: flex;
+  flex-direction: column; }
+  .propmain__titulo {
+    padding: 1rem;
+    color: white; }
+  .propmain__superdiv {
+    display: flex;
+    flex-direction: column; }
+  .propmain__div {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem; }
+    .propmain__div__p {
+      font-size: 0.7rem; }
+  .propmain__img {
+    height: 9rem;
+    width: 100%; }
+  .propmain__mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: white;
+    width: 18rem; }
+
+.background {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.541), rgba(5, 7, 12, 0.479)), url(/imagenes/mamieverest.jpeg);
+  background-size: 100% 100%; }
+
+.backgroundd {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/imagenes/fiambala.jpg);
+  background-size: 100%; }
