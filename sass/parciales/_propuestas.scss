@@ -5,7 +5,16 @@
     &__titulo{
         padding: 1rem;
         color: $white;
-    }
+
+        &__h1{
+            text-align: end;
+        }
+
+        &p{
+            text-align: center;
+        }
+
+        }
 
     &__superdiv{
         display: flex;
@@ -18,13 +27,18 @@
         gap: 2rem;
 
         &__p{
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     }
 
     &__img{
-        height: 9rem;
+        height: 12rem;
         width: 100%;
+        transition: all 1s;
+    }
+
+    &__img:hover{
+        transform: scale(1.5,1.5);
     }
 
     &__mini{
@@ -34,15 +48,44 @@
         padding: 2rem;
         color: $white;
         width: 18rem;
+        transition: all 2s;
+
+        &p{
+            text-align: center;
+        }
     }
+
 }
 
 .background{
-    background-image: linear-gradient(rgba(5, 7, 12, 0.541), rgba(5, 7, 12, 0.479)),url(/imagenes/mamieverest.jpeg);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)),url(/imagenes/mamieverest.jpeg);
     background-size: 100% 100%;
 }
 
 .backgroundd{
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),url(/imagenes/fiambala.jpg);
     background-size: 100%;
+}
+
+.grupimg{
+    height: 15rem;
+    width: 15rem;
+
+    &p{
+        color: $white;
+    }
+}
+
+.grupalcont{
+    display: flex;
+    width: 50rem;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    transition: all 3s;
+}
+
+.grupalcont:hover{
+    transform: scale(1.1,1.1);
 }

@@ -234,6 +234,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   .propmain__titulo {
     padding: 1rem;
     color: white; }
+    .propmain__titulo__h1 {
+      text-align: end; }
+    .propmain__titulop {
+      text-align: center; }
   .propmain__superdiv {
     display: flex;
     flex-direction: column; }
@@ -242,22 +246,46 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     justify-content: space-evenly;
     gap: 2rem; }
     .propmain__div__p {
-      font-size: 0.7rem; }
+      font-size: 1rem; }
   .propmain__img {
-    height: 9rem;
-    width: 100%; }
+    height: 12rem;
+    width: 100%;
+    transition: all 1s; }
+  .propmain__img:hover {
+    transform: scale(1.5, 1.5); }
   .propmain__mini {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     color: white;
-    width: 18rem; }
+    width: 18rem;
+    transition: all 2s; }
+    .propmain__minip {
+      text-align: center; }
 
 .background {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.541), rgba(5, 7, 12, 0.479)), url(/imagenes/mamieverest.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
   background-size: 100% 100%; }
 
 .backgroundd {
   background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(/imagenes/fiambala.jpg);
   background-size: 100%; }
+
+.grupimg {
+  height: 15rem;
+  width: 15rem; }
+  .grupimgp {
+    color: white; }
+
+.grupalcont {
+  display: flex;
+  width: 50rem;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  transition: all 3s; }
+
+.grupalcont:hover {
+  transform: scale(1.1, 1.1); }
