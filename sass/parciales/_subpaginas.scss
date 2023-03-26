@@ -1,0 +1,230 @@
+.subheader{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,rgb(184, 227, 240),rgb(91, 218, 211));
+
+    &__div{
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+
+    &1{
+        margin-left: 1rem;
+    }
+
+    &2{
+        margin-right: 1rem;
+
+    &__div{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    }
+
+    &__anchor{
+        color: black;
+        font-size: 1.2rem;
+        text-decoration: none;
+
+    &__prin{
+        font-size: 1.5rem;
+    }
+
+    }
+
+    &__img{
+        height: 4rem;
+        width: 4rem;
+        transform: skew(-22deg);
+    }
+
+    }
+}
+
+// main
+
+@mixin subtitulo{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 3rem;
+        margin-top: 1rem;
+}
+
+@mixin subh2{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+@mixin subp{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.7rem;
+}
+
+.mentorado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.74), rgba(5, 7, 12, 0.678)),url(/imagenes/fiambala.jpg);
+    background-size: 100% 100% ;
+    color: white;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+
+    &p{
+        @include subp();
+    }
+
+    &span{
+        background-color: rgb(141, 213, 235);
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        color: black;
+    }
+
+    &div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+}
+
+.excusas{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+
+    &img{
+        width: 20rem;
+        height: 15rem;
+        padding: 1rem;
+    }
+
+    &div{
+        display: flex;
+        justify-content: center
+    }
+}
+
+.gestion{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+}
+
+.habitos{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+}
+
+.tesis{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+       
+    }
+
+    &title{
+        font-size: 2.6rem;
+        padding: 1.5rem;
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+
+    &ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-decoration: none;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    &li{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+.comu{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+
+    &ul{
+        @extend .tesisul;
+    }
+
+    &li{
+        @extend .tesisli;
+    }
+}
+
+.grupal{
+    @extend .mentorado;
+
+    &h1{
+        @include subtitulo();
+    }
+
+    &h2{
+        @include subh2();
+    }
+    &p{
+        @include subp();
+    }
+}
