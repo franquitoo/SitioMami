@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     gap: 1.5rem;
     margin-right: 2.5rem; }
   .header__anchor, .aside__anchor {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: black; }
 
 .main {
@@ -84,7 +84,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 0.3rem; }
+  gap: 0.3rem;
+  border: 1px solid black;
+  margin: 1rem; }
   .aside__img {
     height: 10rem;
     width: 10rem; }
@@ -113,7 +115,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(to right, #2b2a2a, #868788); }
+  background-image: linear-gradient(to right, #3f3f3f, #a5a5a7); }
   .footer__Img {
     height: 5rem;
     width: 5rem; }
@@ -287,10 +289,10 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   gap: 1rem; }
 
 .trayectoria {
-  background-image: linear-gradient(to right, #73cae7, #e3f4fa); }
+  background-image: linear-gradient(to left, #72d0f0, #e5f9ff);
+  padding: 1rem; }
 
-.sec1, .sec2 {
-  margin: 0rem 0.5rem 0rem 0.5rem;
+.sec1, .sec2, .sec3 {
   border: 1px black solid; }
   .sec1div {
     display: flex;
@@ -298,7 +300,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     align-items: center; }
   .sec1img {
     width: 30rem;
-    height: 30rem; }
+    height: 30rem;
+    padding: 0.3rem; }
   .sec1list {
     list-style-type: none;
     padding-left: 0rem; }
@@ -341,6 +344,97 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     text-align: center;
     font-size: 2rem;
     text-decoration: underline; }
+
+.sec3 {
+  padding: 1rem;
+  margin-top: 1rem; }
+  .sec3titles {
+    text-align: center; }
+  .sec3div {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .sec3div2 {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      padding: 1rem; }
+      .sec3div2h4 {
+        text-align: center;
+        text-decoration: underline;
+        background-color: azure;
+        padding: 0.3rem;
+        border-radius: 1rem; }
+      .sec3div2cont {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "mentoradeportiva mentoradehabitos mentoradeemprendedores";
+        gap: 1rem; }
+        .sec3div2cont1 {
+          grid-area: mentoradeportiva; }
+        .sec3div2cont2 {
+          grid-area: mentoradehabitos; }
+        .sec3div2cont3 {
+          grid-area: mentoradeemprendedores; }
+    .sec3div3 {
+      margin-top: 1rem; }
+      .sec3div3p {
+        text-align: center; }
+
+.contacto {
+  background-image: linear-gradient(to left, white, #57bddf);
+  background-size: 100% 100%; }
+  .contactodiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.contactsection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; }
+  .contactsectiontitle {
+    gap: 0.1rem; }
+  .contactsectionp {
+    font-size: 1.3rem;
+    padding: 2rem; }
+  .contactsection2 {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+    background-image: linear-gradient(to right, white, #78c9e4);
+    border-radius: 2rem;
+    border: 1px solid black; }
+  .contactsectionicon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; }
+  .contactsectionh2 {
+    font-size: 2.3rem; }
+  .contactsectionh1 {
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: black; }
+  .contactsectionh3 {
+    text-align: center; }
+  .contactsectiondiv {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: black;
+    background-image: linear-gradient(to right, white, #73cbe9);
+    border-radius: 1.5rem;
+    margin-left: 2rem;
+    border: 1px solid black; }
+    .contactsectiondiva {
+      display: flex;
+      align-items: center;
+      color: black;
+      gap: 1rem;
+      text-decoration: none; }
 
 .subheader {
   display: flex;
@@ -514,3 +608,63 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   font-size: 1.3rem;
   text-align: center;
   padding: 0.7rem; }
+
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-rows: 15% 28% auto 12%;
+    grid-template-areas: "header" "main" "aside" "footer";
+    background-image: linear-gradient(to bottom, white, #3c96d1); }
+  .header {
+    flex-direction: column; }
+    .headeri {
+      font-size: 0.6rem; }
+    .header__logo {
+      width: 20rem;
+      height: 10rem; }
+    .header__list {
+      gap: 0.5rem; }
+    .header__anchor, .aside__anchor {
+      font-size: 0.5rem;
+      background-color: white;
+      border-radius: 0.3rem; }
+    .headerli {
+      background-color: white;
+      border-radius: 0.3rem;
+      padding: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.1rem; }
+  .main {
+    background-image: linear-gradient(to bottom, white, #3c96d1); }
+    .main__h3 {
+      font-size: 1rem;
+      max-width: 390px;
+      padding-left: 1rem; }
+  .aside {
+    background-image: linear-gradient(to top, white, #3c96d1);
+    border: none;
+    margin: 0rem; }
+    .aside__h3 {
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      background-color: white; }
+    .aside__div {
+      margin-top: 1.5rem; }
+    .aside__p {
+      max-width: 390px; }
+    .aside__contenedor {
+      margin: 1rem; }
+    .aside__anchor {
+      font-size: 1rem; }
+    .aside__icon {
+      font-size: 1rem; }
+  #carouselExampleCaptions {
+    width: 20rem; } }
+
+.footer {
+  flex-direction: column; }
+  .footer__Img {
+    height: 4rem;
+    width: 3.3rem; }

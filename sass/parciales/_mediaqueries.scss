@@ -1,0 +1,112 @@
+// principio MEDIA QUERIES (Index)
+
+@media screen and (max-width: 400px){
+
+// Index
+
+.grid{
+    grid-template-columns: auto;
+    grid-template-rows: 15% 28% auto 12%;
+    grid-template-areas: "header"
+                         "main"
+                         "aside"
+                         "footer";
+    background-image: linear-gradient(to bottom,white,rgb(60, 150, 209));
+                        
+}
+
+.header{
+    
+    flex-direction: column;
+
+    &i{
+        font-size: 0.6rem;
+    }
+
+    &__logo{
+        width: 20rem;
+        height: 10rem;
+    }
+
+    &__list{
+        gap: 0.5rem;
+    }
+
+    &__anchor{
+        font-size: 0.5rem;
+        background-color: white;
+        border-radius: 0.3rem;
+    }
+
+    &li{
+        background-color: white;
+        border-radius: 0.3rem;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.1rem;
+    }
+}
+
+.main{
+
+   background-image: linear-gradient(to bottom,white,rgb(60, 150, 209));
+
+
+    &__h3{
+        font-size: 1rem;
+        max-width: 390px;
+        padding-left: 1rem;
+    }
+
+}    
+
+.aside{
+    background-image: linear-gradient(to top,white,rgb(60, 150, 209));
+    border: none;
+    margin: 0rem;
+
+    &__h3{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: white;
+    }
+
+    &__div{
+        margin-top: 1.5rem;
+    }
+
+    &__p{
+        max-width: 390px;
+    }
+
+    &__contenedor{
+        margin: 1rem;
+    }
+
+    &__anchor{
+        font-size: 1rem;
+    }
+
+    &__icon{
+        font-size: 1rem;
+    }
+
+
+}
+
+#carouselExampleCaptions{
+    width: 20rem;
+}
+
+}
+
+.footer{
+    flex-direction: column;
+
+    &__Img{
+        height: 4rem;
+        width: 3.3rem;
+    }
+}

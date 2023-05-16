@@ -1,0 +1,75 @@
+.contacto{
+    background-image: linear-gradient(to left,white,rgb(87, 189, 223));
+    background-size: 100% 100%;
+
+    &div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contactsection{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &title{
+        gap: 0.1rem;
+    }
+
+    &p{
+        font-size: 1.3rem;
+        padding: 2rem;
+    }
+
+    &2{
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        width: 25rem;
+        background-image: linear-gradient(to right,white,rgb(120, 201, 228));
+        border-radius: 2rem;
+        border: 1px solid black;
+    }
+
+    &icon{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &h2{
+        font-size: 2.3rem;
+    }
+
+    &h1{
+        text-align: center;
+        padding: 0.8rem;
+        font-size: 3rem;
+        text-decoration: underline;
+        color: rgb(0, 0, 0);
+    }
+
+    &h3{
+        text-align: center;
+    }
+
+    &div{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        color: black;
+        background-image: linear-gradient(to right,white,rgb(115, 203, 233));
+        border-radius: 1.5rem;
+        margin-left: 2rem;
+        border: 1px solid black;
+
+        &a{
+            display: flex;
+            align-items: center;
+            color:black;
+            gap: 1rem;
+            text-decoration: none;
+        }
+    }
+}
