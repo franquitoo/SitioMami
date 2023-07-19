@@ -1,6 +1,6 @@
 // principio MEDIA QUERIES (Index)
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
 
 // Index
 
@@ -87,6 +87,7 @@
 
     &__anchor{
         font-size: 1rem;
+        background-color: none;
     }
 
     &__icon{
@@ -100,8 +101,6 @@
     width: 20rem;
 }
 
-}
-
 .footer{
     flex-direction: column;
 
@@ -109,4 +108,171 @@
         height: 4rem;
         width: 3.3rem;
     }
+}
+
+// CONTACTO
+
+.contacto{
+
+    &div{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+.contactsection{
+    gap: 1rem;
+    border-bottom: 1px black solid;
+
+    &h2{
+        font-size: 1.2rem;
+    }
+
+    &div{
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    &p{
+        font-size: 1rem;
+    }
+
+    &2{
+        margin-right: 0rem;
+        width: 22rem;
+    }
+}
+
+}
+
+// YOUTUBE
+
+.youtube__grid{
+    grid-template-rows: 14% 80% auto;
+
+}
+
+.youtube__list{
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.youtubeanchor{
+    font-size: 0.5rem;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+
+.iframesuper{
+    width: 20rem;
+    height: 12rem;
+}
+
+.iframe{
+    width: 10rem;
+    height: 6rem;
+    text-align: center;
+
+    &contenedorh3{
+        font-size: 0.8rem;
+    }
+}
+
+.iframecontenedordiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// QUIEN SOY
+
+.sec1div2{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.sec2{
+    flex-direction: column;
+
+    &div{
+        width: 100%;
+    }
+
+    &h4{
+        margin-bottom: 2rem;
+    }
+}
+
+.sec3div2cont{
+    display: flex;
+    flex-direction: column;
+}
+
+// PROPUESTAS
+
+.propmain__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+
+.propmain__minip{
+    color: 
+    black;
+}
+
+.background{
+    background-image: linear-gradient(to bottom, rgb(11, 172, 226),rgb(86, 205, 235));
+}
+
+.subheader{
+    display: flex;
+    flex-direction: column;
+
+    &__div1{
+        justify-content: end;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    &__div2{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 0.5rem;
+    }
+}
+
+.grupalcont{
+    flex-direction: column;
+    width: 100%;
+}
+
+.backgroundd{
+    background-image: linear-gradient(to bottom, rgb(11, 172, 226),rgb(86, 205, 235));
+    border-top: 1px black solid;
+}
+
+.propmain__titulo{
+    color: black;
+}
+
+.grupimgp{
+    color: black;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+
+    &2{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
 }

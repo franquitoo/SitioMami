@@ -33,6 +33,7 @@
         font-size: 1.3rem;
         color: black;
     }
+
 }
 
 .main{
@@ -115,8 +116,9 @@
     }
 
     &__anchor{
-        @extend .header__anchor;
+        color: black;
         font-size: 1.7rem;
+        text-decoration: none;
         
     }
 

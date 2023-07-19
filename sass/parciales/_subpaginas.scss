@@ -152,11 +152,21 @@
     }
     &p{
         @include subp();
+        margin-top: 1rem;
     }
 }
 
 .tesis{
     @extend .mentorado;
+
+    &img{
+        margin-bottom: 1rem;
+
+        &cont{
+            display: flex;
+            justify-content: center;
+        }
+    }
 
     &h1{
         @include subtitulo();
@@ -178,7 +188,7 @@
     &ul{
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
         text-decoration: none;
         margin-left: 1rem;
         margin-top: 1rem;
@@ -188,6 +198,7 @@
         display: flex;
         gap: 0.5rem;
         align-items: center;
+        font-size: 1.2rem;
     }
 }
 
