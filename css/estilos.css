@@ -267,7 +267,9 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     width: 18rem;
     transition: all 2s; }
     .propmain__minip {
-      text-align: center; }
+      text-align: center;
+      text-decoration: underline;
+      font-size: 1.1rem; }
 
 .background {
   background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
@@ -684,7 +686,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     gap: 1rem; }
   .contacto .contactsection {
     gap: 1rem;
-    border-bottom: 1px black solid; }
+    border-bottom: 1px white solid; }
     .contacto .contactsectionh2 {
       font-size: 1.2rem; }
     .contacto .contactsectiondiv {
@@ -717,6 +719,11 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .sec1divh1 {
+    margin-top: 0.5rem; }
+  .sec1divh3 {
+    margin-left: 1rem;
+    font-size: 1.3rem; }
   .sec1div2 {
     display: flex;
     flex-direction: column; }
@@ -737,6 +744,8 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     flex-direction: column;
     align-items: center;
     gap: 0rem; }
+  .propmain__titulo__h1 {
+    text-align: center; }
   .propmain__minip {
     color: black; }
   .background {
