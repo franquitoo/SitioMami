@@ -24,7 +24,7 @@
     }
 
     &__logo{
-        width: 20rem;
+        width: 100%;
         height: 10rem;
     }
 
@@ -148,7 +148,7 @@
 // YOUTUBE
 
 .youtube__grid{
-    grid-template-rows: 14% 80% auto;
+    grid-template-rows: 13% 80% auto;
 
 }
 
