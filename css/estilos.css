@@ -641,6 +641,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     grid-template-areas: "header" "main" "aside" "footer";
     background-image: linear-gradient(to bottom, white, #3c96d1); }
   .header {
+    background-image: linear-gradient(to bottom, white, #90d1e7);
     flex-direction: column; }
     .headeri {
       font-size: 0.6rem; }
@@ -712,7 +713,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
         margin-right: 0rem;
         width: 22rem; }
   .youtube__grid {
-    grid-template-rows: 13% 80% auto; }
+    grid-template-rows: 13% auto; }
   .youtube__list {
     text-align: center;
     margin-right: 2rem; }

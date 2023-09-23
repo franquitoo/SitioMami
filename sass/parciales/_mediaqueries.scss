@@ -16,6 +16,8 @@
 }
 
 .header{
+
+    background-image: linear-gradient(to bottom, white, rgb(144, 209, 231));
     
     flex-direction: column;
 
@@ -148,7 +150,7 @@
 // YOUTUBE
 
 .youtube__grid{
-    grid-template-rows: 13% 80% auto;
+    grid-template-rows: 13 % 80% auto;
 
 }
 
