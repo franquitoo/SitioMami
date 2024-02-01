@@ -1,0 +1,49 @@
+.reflexiones{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-image: linear-gradient(to right, rgb(67, 158, 189), rgb(216, 234, 240));
+
+    &div{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px black solid;
+        padding: 1rem;
+    }
+
+    &img{
+        width: 25rem;
+        height: 15rem;
+    }
+
+    &title{
+        font-size: 2.3rem;
+    }
+
+    &p{
+        font-size: 1.6rem;
+    }
+
+    &texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &a{
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        padding: 0.5rem;
+        border: 1px solid black;
+        border-radius: 1rem;
+        width: 15rem;
+        transition: all 1s;
+    }
+
+    &a:hover{
+        transform: scale(1.1,1.1);
+        background-image: linear-gradient(to right,rgb(216, 234, 240), rgb(67, 158, 189));
+    }
+}

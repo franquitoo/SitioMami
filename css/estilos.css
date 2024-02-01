@@ -634,6 +634,41 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   text-align: center;
   padding: 0.7rem; }
 
+.reflexiones {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #439ebd, #d8eaf0); }
+  .reflexionesdiv {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px black solid;
+    padding: 1rem; }
+  .reflexionesimg {
+    width: 25rem;
+    height: 15rem; }
+  .reflexionestitle {
+    font-size: 2.3rem; }
+  .reflexionesp {
+    font-size: 1.6rem; }
+  .reflexionestexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .reflexionesa {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 15rem;
+    transition: all 1s; }
+  .reflexionesa:hover {
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(to right, #d8eaf0, #439ebd); }
+
 @media screen and (max-width: 420px) {
   .grid {
     grid-template-columns: auto;
