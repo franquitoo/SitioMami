@@ -664,10 +664,41 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     border: 1px solid black;
     border-radius: 1rem;
     width: 15rem;
-    transition: all 1s; }
+    transition: all 0.5s; }
   .reflexionesa:hover {
     transform: scale(1.1, 1.1);
     background-image: linear-gradient(to right, #d8eaf0, #439ebd); }
+
+.subreflex {
+  display: flex;
+  flex-direction: column; }
+  .subreflexdiv {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: linear-gradient(145deg, #5dc1e2, #93d2e7, lightblue, white); }
+    .subreflexdivtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+    .subreflexdivimg {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+  .subreflextitles {
+    text-decoration: underline;
+    font-style: oblique;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0.2rem; }
+  .subrefleximg {
+    width: 32rem;
+    max-height: 30rem; }
+  .subreflexspan {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    font-style: oblique;
+    text-decoration: underline; }
 
 @media screen and (max-width: 420px) {
   .grid {
