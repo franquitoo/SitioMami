@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +50,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     gap: 1.5rem;
     margin-right: 2.5rem; }
   .header__anchor {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: black; }
 
 .main {
@@ -399,7 +400,7 @@ h1, h2, h3, h4, h5, h6, p, a, li {
           font-size: 1.2rem; }
 
 .contacto {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.74), rgba(5, 7, 12, 0.678)), url(/imagenes/tedxCarrusel.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.74), rgba(5, 7, 12, 0.678)), url(/imagenes/mamimontaña.jpeg);
   background-size: 100% 100%; }
   .contactodiv {
     display: flex;
@@ -674,17 +675,29 @@ h1, h2, h3, h4, h5, h6, p, a, li {
   flex-direction: column; }
   .subreflexdiv {
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
     gap: 1rem;
-    background-image: linear-gradient(145deg, #5dc1e2, #93d2e7, lightblue, white); }
+    align-items: center;
+    background-image: linear-gradient(to bottom, #48c6f0, #e2eef0); }
+    .subreflexdivespecial {
+      display: flex;
+      flex-direction: column;
+      background-image: linear-gradient(to bottom, #48c6f0, #e2eef0); }
     .subreflexdivtext {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
+      .subreflexdivtextesp {
+        padding-top: 0rem;
+        padding: 1rem; }
     .subreflexdivimg {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
+      .subreflexdivimgesp {
+        display: flex;
+        gap: 1rem;
+        align-items: center; }
   .subreflextitles {
     text-decoration: underline;
     font-style: oblique;
@@ -692,10 +705,13 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     text-align: center;
     padding: 0.2rem; }
   .subrefleximg {
-    width: 32rem;
+    width: 35rem;
     max-height: 30rem; }
+    .subrefleximga {
+      width: 45rem;
+      height: 30rem; }
   .subreflexspan {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 1.2rem;
     font-style: oblique;
     text-decoration: underline; }
@@ -857,4 +873,30 @@ h1, h2, h3, h4, h5, h6, p, a, li {
     font-size: 1.5rem; }
     .subtitle2 {
       font-size: 1rem;
-      text-align: center; } }
+      text-align: center; }
+  .reflexionesdiv {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .reflexionesimg {
+    width: 23rem;
+    margin-top: 1rem; }
+  .subreflex {
+    background-image: linear-gradient(to right, #e2eef0, #48c6f0); }
+    .subreflexdiv {
+      flex-direction: column;
+      background-image: none; }
+      .subreflexdivespecial {
+        background-image: none; }
+      .subreflexdivimgesp {
+        flex-direction: column;
+        background-image: none;
+        padding: 1rem; }
+      .subreflexdivtextesp {
+        padding: 1rem; }
+    .subrefleximg {
+      width: 23rem;
+      height: 15rem; }
+      .subrefleximga {
+        width: 23rem;
+        height: 15rem; } }

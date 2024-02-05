@@ -291,4 +291,51 @@
     }
 }
 
+.reflexiones{
+    &div{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    &img{
+        width: 23rem;
+        margin-top: 1rem;
+    }
+}
+
+.subreflex{
+    background-image: linear-gradient(to right,rgb(226, 238, 240),rgb(72, 198, 240));
+    &div{
+        flex-direction: column;
+        background-image: none;
+
+        &especial{
+            background-image: none;
+        }
+
+        &imgesp{
+            flex-direction: column;
+            background-image: none;
+            padding: 1rem;
+        }
+
+        &textesp{
+            padding: 1rem;
+        }
+    }
+
+    &img{
+        width: 23rem;
+        height: 15rem;
+
+        &a{
+            width: 23rem;
+            height: 15rem;
+        }
+    }
+    
+    
+}
+
 }

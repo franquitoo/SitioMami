@@ -54,20 +54,41 @@
 
     &div{
         display: flex;
-        padding: 1rem;
+        padding: 0.5rem;
         gap: 1rem;
-        background-image: linear-gradient(145deg, rgb(93, 193, 226),rgb(147, 210, 231),lightblue,rgb(255, 255, 255));
+        align-items: center;
+        background-image: linear-gradient(to bottom,rgb(72, 198, 240),rgb(226, 238, 240));
+        
+
+        &especial{
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(to bottom,rgb(72, 198, 240),rgb(226, 238, 240));
+           
+        }
 
         &text{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            &esp{
+                padding-top: 0rem;
+                padding: 1rem;
+            }
+
         }
 
         &img{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            &esp{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
         }
 
     }
@@ -81,12 +102,17 @@
     }
 
     &img{
-        width: 32rem;
+        width: 35rem;
         max-height: 30rem;
+
+        &a{
+            width: 45rem;
+            height: 30rem;
+        }
     }
 
     &span{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         padding: 1.2rem;
         font-style: oblique;
         text-decoration: underline;
