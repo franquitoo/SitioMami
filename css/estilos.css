@@ -707,7 +707,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 @media screen and (max-width: 420px) {
   .grid {
     grid-template-columns: auto;
-    grid-template-rows: 15% 28% auto 12%;
+    grid-template-rows: 22% 28% auto 12%;
     grid-template-areas: "header" "main" "aside" "footer";
     background-image: linear-gradient(to bottom, white, #3c96d1); }
   .header {
@@ -785,7 +785,8 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   .youtube__grid {
     grid-template-rows: 20% 74% auto; }
   .youtube__list {
-    text-align: center; }
+    text-align: center;
+    margin-right: 1rem; }
   .youtubeanchor {
     font-size: 1rem; }
   .iframesuper {

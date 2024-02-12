@@ -6,7 +6,7 @@
 
 .grid{
     grid-template-columns: auto;
-    grid-template-rows: 15% 28% auto 12%;
+    grid-template-rows: 22% 28% auto 12%;
     grid-template-areas: "header"
                          "main"
                          "aside"
@@ -156,6 +156,7 @@
 
 .youtube__list{
     text-align: center;
+    margin-right: 1rem;
 }
 
 .youtubeanchor{
