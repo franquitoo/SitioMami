@@ -1,11 +1,7 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    grid-area: header;
     background-image: url(/imagenes/mamieverest.jpeg);
     background-size: 100%;
-    grid-area: header;
 
 
     &__contenedor1{
@@ -27,12 +23,11 @@
     }
 
     & nav{
-        border-radius: 20px;
-        background-image: linear-gradient( to left, rgb(146, 198, 233), rgb(60, 150, 209));;
+        background: none !important;
 
         & a{
             transition: all 0.3s;
-
+            
             &:hover{
                 color: white;
             }
@@ -41,8 +36,21 @@
                 margin-right: 0.1rem;
             }
         }
-      }
 
+    }
+
+    &container{
+        display: flex;
+        
+    }
+}
+
+.collapse{
+    flex-grow: 0;
+}
+
+.navbar-nav{
+    gap: 2rem;
 }
 
 .main{

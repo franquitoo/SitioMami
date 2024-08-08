@@ -26,13 +26,9 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 
 /* FINAL GENERAL */
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  grid-area: header;
   background-image: url(/imagenes/mamieverest.jpeg);
-  background-size: 100%;
-  grid-area: header; }
+  background-size: 100%; }
   .header__contenedor1 {
     padding: 0.6rem; }
   .header__h3 {
@@ -45,14 +41,21 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     height: 14rem;
     width: 35rem; }
   .header nav {
-    border-radius: 20px;
-    background-image: linear-gradient(to left, #92c6e9, #3c96d1); }
+    background: none !important; }
     .header nav a {
       transition: all 0.3s; }
       .header nav a:hover {
         color: white; }
       .header nav a i {
         margin-right: 0.1rem; }
+  .headercontainer {
+    display: flex; }
+
+.collapse {
+  flex-grow: 0; }
+
+.navbar-nav {
+  gap: 2rem; }
 
 .main {
   background-image: linear-gradient(to left, white, #3c96d1);
@@ -711,9 +714,8 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 
 @media screen and (max-width: 430px) {
   .grid {
-    grid-template-columns: auto;
-    grid-template-rows: 13% 28% auto 12%;
-    grid-template-areas: "header" "main" "aside" "footer";
+    display: flex;
+    flex-direction: column;
     background-image: linear-gradient(to bottom, white, #3c96d1); }
   .header {
     background-image: linear-gradient(to bottom, white, #90d1e7);
@@ -726,10 +728,12 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       font-size: 0.6rem; }
     .header__logo {
       width: 100%;
-      height: 5rem;
-      width: 12rem; }
+      height: 9rem;
+      width: 17rem; }
     .header nav {
       margin: 1rem; }
+  .navbar-nav {
+    gap: 1rem; }
   .main {
     background-image: linear-gradient(to bottom, white, #3c96d1);
     gap: 1.5rem; }
@@ -737,6 +741,8 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       font-size: 1rem;
       max-width: 390px;
       padding-left: 1rem; }
+    .main__contenedor2 {
+      padding: 1rem; }
   .aside {
     background-image: linear-gradient(to top, white, #3c96d1);
     border: none;
@@ -769,7 +775,8 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   .contactoh4 {
     font-size: 1.1rem; }
   .youtube__grid {
-    grid-template-rows: 11% 74% auto; }
+    display: flex;
+    flex-direction: column; }
   .youtube__list {
     text-align: center;
     margin-right: 1rem; }
