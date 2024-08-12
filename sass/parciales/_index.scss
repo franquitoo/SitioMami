@@ -1,7 +1,5 @@
 .header{
     grid-area: header;
-    background-image: url(/imagenes/mamieverest.jpeg);
-    background-size: 100%;
 
 
     &__contenedor1{
@@ -23,7 +21,8 @@
     }
 
     & nav{
-        background: none !important;
+        background: url(/imagenes/mamieverest.jpeg);
+        background-size: 100%;
 
         & a{
             transition: all 0.3s;
@@ -37,11 +36,6 @@
             }
         }
 
-    }
-
-    &container{
-        display: flex;
-        
     }
 }
 

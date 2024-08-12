@@ -26,9 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 
 /* FINAL GENERAL */
 .header {
-  grid-area: header;
-  background-image: url(/imagenes/mamieverest.jpeg);
-  background-size: 100%; }
+  grid-area: header; }
   .header__contenedor1 {
     padding: 0.6rem; }
   .header__h3 {
@@ -41,15 +39,14 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     height: 14rem;
     width: 35rem; }
   .header nav {
-    background: none !important; }
+    background: url(/imagenes/mamieverest.jpeg);
+    background-size: 100%; }
     .header nav a {
       transition: all 0.3s; }
       .header nav a:hover {
         color: white; }
       .header nav a i {
         margin-right: 0.1rem; }
-  .headercontainer {
-    display: flex; }
 
 .collapse {
   flex-grow: 0; }
@@ -718,22 +715,24 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     flex-direction: column;
     background-image: linear-gradient(to bottom, white, #3c96d1); }
   .header {
-    background-image: linear-gradient(to bottom, white, #90d1e7);
     flex-direction: row; }
     .header h3 {
       font-size: 1rem; }
     .headeraprincipal {
       font-size: 1rem; }
     .headeri {
-      font-size: 0.6rem; }
+      font-size: 0.8rem; }
     .header__logo {
       width: 100%;
       height: 9rem;
       width: 17rem; }
     .header nav {
-      margin: 1rem; }
+      background-image: linear-gradient(to bottom, white, #90d1e7);
+      margin: 0rem; }
   .navbar-nav {
     gap: 1rem; }
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    justify-content: space-evenly; }
   .main {
     background-image: linear-gradient(to bottom, white, #3c96d1);
     gap: 1.5rem; }
