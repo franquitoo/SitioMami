@@ -668,46 +668,37 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   flex-direction: column; }
   .subreflexdiv {
     display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 1px black solid;
     padding: 0.5rem;
     gap: 1rem;
     align-items: center;
-    background-image: linear-gradient(to bottom, #48c6f0, #e2eef0); }
-    .subreflexdivespecial {
-      display: flex;
-      flex-direction: column;
-      background-image: linear-gradient(to bottom, #48c6f0, #e2eef0); }
+    background-image: linear-gradient(to right, #48c6f0, #e2eef0); }
     .subreflexdivtext {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
-      .subreflexdivtextesp {
-        padding-top: 0rem;
-        padding: 1rem; }
+      background-image: linear-gradient(to right, #48c6f0, #e2eef0);
+      padding: 0.5rem; }
+      .subreflexdivtext p {
+        padding: 0.2rem; }
     .subreflexdivimg {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
-      .subreflexdivimgesp {
-        display: flex;
-        gap: 1rem;
-        align-items: center; }
   .subreflextitles {
-    text-decoration: underline;
     font-style: oblique;
-    font-size: 2.2rem;
-    text-align: center;
-    padding: 0.2rem; }
+    font-size: 2rem;
+    text-align: center; }
   .subrefleximg {
     width: 35rem;
-    max-height: 30rem; }
+    max-height: 20rem; }
     .subrefleximga {
       width: 45rem;
       height: 30rem; }
   .subreflexspan {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 1.2rem;
-    font-style: oblique;
-    text-decoration: underline; }
+    font-style: oblique; }
 
 @media screen and (max-width: 430px) {
   .grid {
