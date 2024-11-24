@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 .youtube__grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 12% 85% auto;
+  grid-template-rows: 9.5% 85% auto;
   grid-template-areas: "header" "main" "footer"; }
 
 /* FINAL GENERAL */
