@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
 .youtube__grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 12% 84% auto;
+  grid-template-rows: 12% 85% auto;
   grid-template-areas: "header" "main" "footer"; }
 
 /* FINAL GENERAL */
@@ -213,6 +213,16 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
+  .youtube__main__div6 div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; }
+    .youtube__main__div6 div ul li {
+      font-size: 1.3rem; }
+      .youtube__main__div6 div ul li a {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px rgba(35, 106, 199, 0.384) solid; }
 
 .dobleiframecontenedor {
   display: flex;
@@ -642,9 +652,9 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     width: 25rem;
     height: 15rem; }
   .reflexionestitle {
-    font-size: rem; }
+    font-size: 2.3rem; }
   .reflexionesp {
-    font-size: 1rem; }
+    font-size: 1.6rem; }
   .reflexionestexto {
     display: flex;
     flex-direction: column;
@@ -678,7 +688,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       display: flex;
       flex-direction: column;
       background-image: linear-gradient(to right, #48c6f0, #e2eef0);
-      padding: 0.5rem; }
+      padding: 0.2rem; }
       .subreflexdivtext p {
         padding: 0.2rem; }
     .subreflexdivimg {

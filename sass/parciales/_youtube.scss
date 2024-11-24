@@ -83,6 +83,29 @@
     &__div5{
         @extend .youtube__main__div4;
     }
+
+    &__div6{
+
+        & div{
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+    
+                & li{
+                    font-size: 1.3rem;
+
+                    & a{
+                        padding: 0.5rem;
+                        border-radius: 5px;
+                        border: 1px rgba(35, 106, 199, 0.384) solid;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 .dobleiframecontenedor{
