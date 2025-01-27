@@ -691,6 +691,25 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       padding: 0.2rem; }
       .subreflexdivtext p {
         padding: 0.2rem; }
+      .subreflexdivtext h2 {
+        text-align: center; }
+      .subreflexdivtextimg1 {
+        width: 40rem;
+        height: 25rem; }
+      .subreflexdivtextimg2 {
+        width: 20rem;
+        height: 25rem; }
+      .subreflexdivtext div {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem; }
+        .subreflexdivtext div div {
+          display: flex;
+          flex-direction: column;
+          text-align: center; }
+          .subreflexdivtext div div h3 {
+            width: 100%;
+            font-size: 1.2rem; }
     .subreflexdivimg {
       display: flex;
       flex-direction: column;

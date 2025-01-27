@@ -71,6 +71,38 @@
                 padding: 0.2rem;
             }
 
+            & h2{
+                text-align: center;
+            }
+
+            &img1{
+                width: 40rem;
+                height: 25rem;
+            }
+
+            &img2{
+                width: 20rem;
+                height: 25rem;
+            }
+
+            & div{
+                display: flex;
+                justify-content: space-evenly;
+                margin-bottom: 2rem;
+
+                & div{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    & h3{
+                        width: 100%;
+                        font-size: 1.2rem;
+                    }
+
+                }
+
+            }
         }
 
         &img{
