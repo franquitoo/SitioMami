@@ -76,11 +76,16 @@
             }
 
             &img1{
-                width: 40rem;
-                height: 25rem;
+                width: 30rem;
+                height: 20rem;
             }
 
             &img2{
+                width: 16rem;
+                height: 22rem;
+            }
+
+            &img3{
                 width: 20rem;
                 height: 25rem;
             }
@@ -94,10 +99,11 @@
                     display: flex;
                     flex-direction: column;
                     text-align: center;
+                    justify-content: center;
 
                     & h3{
                         width: 100%;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                 }

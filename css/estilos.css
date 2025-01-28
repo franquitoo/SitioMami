@@ -694,9 +694,12 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       .subreflexdivtext h2 {
         text-align: center; }
       .subreflexdivtextimg1 {
-        width: 40rem;
-        height: 25rem; }
+        width: 30rem;
+        height: 20rem; }
       .subreflexdivtextimg2 {
+        width: 16rem;
+        height: 22rem; }
+      .subreflexdivtextimg3 {
         width: 20rem;
         height: 25rem; }
       .subreflexdivtext div {
@@ -706,10 +709,11 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         .subreflexdivtext div div {
           display: flex;
           flex-direction: column;
-          text-align: center; }
+          text-align: center;
+          justify-content: center; }
           .subreflexdivtext div div h3 {
             width: 100%;
-            font-size: 1.2rem; }
+            font-size: 1rem; }
     .subreflexdivimg {
       display: flex;
       flex-direction: column;
@@ -893,6 +897,13 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
         padding: 1rem; }
       .subreflexdivtextesp {
         padding: 1rem; }
+      .subreflexdivtext div {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .subreflexdivtextimg1 {
+        width: 90%;
+        height: 15rem; }
     .subrefleximg {
       width: 23rem;
       height: 15rem; }
