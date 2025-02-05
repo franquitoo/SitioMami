@@ -288,10 +288,16 @@
 }
 
 .subreflex{
-    background-image: linear-gradient(to right,rgb(226, 238, 240),rgb(72, 198, 240));
+
     &div{
         flex-direction: column;
+        align-items: center;
         background-image: none;
+        padding: 0rem;
+
+        & div{
+            padding: 0.5rem;
+        }
 
         &especial{
             background-image: none;

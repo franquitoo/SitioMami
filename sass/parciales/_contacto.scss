@@ -4,7 +4,7 @@
     align-items: center;
     gap: 2rem;
     background-image:linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)),url(/imagenes/mamieverest.jpeg);
-    background-size: 100%;
+    background-size: cover;
     color: white;
 
     &div{
@@ -12,6 +12,11 @@
         @extend .contacto;
         background-image: none;
         gap: 2rem;
+
+        & div{
+            display: flex;
+
+        }
 
         &a{
             display: flex;
@@ -31,6 +36,7 @@
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
+
 
     &h1{
         font-size: 4rem;
@@ -52,7 +58,8 @@
         padding: 1rem;
         width: 40rem;
         border-radius: 2rem;
-        color: black
+        color: black;
+        border: 3pz black solid
     }
 
     &button{
@@ -61,7 +68,7 @@
 
         &:hover{
             color: white;
-            background-image: linear-gradient(to right, rgb(223, 159, 159), red);
+            background-image: linear-gradient(to right, rgb(159, 210, 223), rgb(0, 119, 255));
         }
     }
 

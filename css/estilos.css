@@ -12,6 +12,11 @@
 h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   font-family: 'Poppins', sans-serif; }
 
+span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem; }
+
 .grid {
   display: grid;
   grid-template-columns: 77% 23%;
@@ -419,11 +424,13 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   align-items: center;
   gap: 2rem;
   background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
-  background-size: 100%;
+  background-size: cover;
   color: white; }
   .contactodiv {
     background-image: none;
     gap: 2rem; }
+    .contactodiv div {
+      display: flex; }
     .contactodiva {
       display: flex;
       color: white;
@@ -450,12 +457,13 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     padding: 1rem;
     width: 40rem;
     border-radius: 2rem;
-    color: black; }
+    color: black;
+    border: 3pz black solid; }
   .contactobutton {
     transition: all 1s; }
     .contactobutton:hover {
       color: white;
-      background-image: linear-gradient(to right, #df9f9f, red); }
+      background-image: linear-gradient(to right, #9fd2df, #0077ff); }
 
 .subheader {
   display: flex;
@@ -682,8 +690,19 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
     border-bottom: 1px black solid;
     padding: 0.5rem;
     gap: 1rem;
-    align-items: center;
     background-image: linear-gradient(to right, #48c6f0, #e2eef0); }
+    .subreflexdiv div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .subreflexdiv div h4 {
+        text-align: start;
+        position: absolute;
+        margin: 0.2rem;
+        padding: 0.2rem;
+        font-size: 1rem;
+        border-radius: 3px;
+        background-color: #bbe5f1; }
     .subreflexdiv h4 {
       text-align: center;
       padding-top: 1rem; }
@@ -691,32 +710,34 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       display: flex;
       flex-direction: column;
       background-image: linear-gradient(to right, #48c6f0, #e2eef0);
-      padding: 0.2rem; }
+      padding: 0.2rem;
+      gap: 1rem; }
+      .subreflexdivtext div {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center; }
+        .subreflexdivtext div div {
+          align-items: baseline; }
+          .subreflexdivtext div div h4 {
+            position: absolute;
+            margin: 0.2rem;
+            padding: 0.2rem;
+            font-size: 1rem;
+            border-radius: 3px;
+            background-color: #bbe5f1; }
+        .subreflexdivtext div span {
+          font-size: 1.2rem;
+          font-weight: 800; }
+      .subreflexdivtext img {
+        height: 30rem;
+        width: 25rem; }
       .subreflexdivtext p {
         padding: 0.2rem; }
       .subreflexdivtext h2 {
         text-align: center;
-        padding: 1rem; }
-        .subreflexdivtext h2 span {
-          padding: 0.5rem;
-          background-color: black;
-          color: white; }
-      .subreflexdivtext div {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center; }
-      .subreflexdivtextimg1 {
-        height: 25rem;
-        width: 40rem;
-        padding: 2rem; }
-      .subreflexdivtextimg2 {
-        height: 30rem;
-        width: 25rem;
-        padding: 2rem; }
-      .subreflexdivtextimg3 {
-        height: 30rem;
-        width: 25rem;
-        padding: 2rem; }
+        padding: 1rem;
+        font-weight: 900; }
       .subreflexdivtextdiv {
         display: flex;
         flex-direction: row-reverse; }
@@ -724,22 +745,17 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly; }
-  .subreflextitles, .subreflexdivtext div h4 {
-    font-style: oblique;
+  .subreflextitles {
     font-size: 2rem;
     text-align: center;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px; }
+    border-radius: 10px;
+    font-weight: 900; }
   .subrefleximg {
     width: 35rem;
     max-height: 30rem; }
     .subrefleximga {
       width: 45rem;
       height: 30rem; }
-  .subreflexspan {
-    font-size: 1.6rem;
-    font-style: oblique; }
 
 @media screen and (max-width: 430px) {
   .grid {
@@ -892,29 +908,31 @@ h1, h2, h3, h4, h5, h6, p, a, li, label, input, button {
   .reflexionesimg {
     width: 23rem;
     margin-top: 1rem; }
-  .subreflex {
-    background-image: linear-gradient(to right, #e2eef0, #48c6f0); }
-    .subreflexdiv {
-      flex-direction: column;
+  .subreflexdiv {
+    flex-direction: column;
+    align-items: center;
+    background-image: none;
+    padding: 0rem; }
+    .subreflexdiv div {
+      padding: 0.5rem; }
+    .subreflexdivespecial {
       background-image: none; }
-      .subreflexdivespecial {
-        background-image: none; }
-      .subreflexdivimgesp {
-        flex-direction: column;
-        background-image: none;
-        padding: 1rem; }
-      .subreflexdivtextesp {
-        padding: 1rem; }
-      .subreflexdivtext div {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-      .subreflexdivtextimg1 {
-        width: 90%;
-        height: 15rem; }
-    .subrefleximg {
-      width: 23rem;
+    .subreflexdivimgesp {
+      flex-direction: column;
+      background-image: none;
+      padding: 1rem; }
+    .subreflexdivtextesp {
+      padding: 1rem; }
+    .subreflexdivtext div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .subreflexdivtextimg1 {
+      width: 90%;
       height: 15rem; }
-      .subrefleximga {
-        width: 23rem;
-        height: 15rem; } }
+  .subrefleximg {
+    width: 23rem;
+    height: 15rem; }
+    .subrefleximga {
+      width: 23rem;
+      height: 15rem; } }

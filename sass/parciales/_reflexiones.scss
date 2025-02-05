@@ -58,8 +58,23 @@
         border-bottom: 1px black solid;
         padding: 0.5rem;
         gap: 1rem;
-        align-items: center;
         background-image: linear-gradient(to right,rgb(72, 198, 240),rgb(226, 238, 240));
+
+        & div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            & h4{
+                text-align: start;
+                position: absolute;
+                margin: 0.2rem;
+                padding: 0.2rem;
+                font-size: 1rem;
+                border-radius: 3px;
+                background-color: rgb(187, 229, 241);
+            }
+        }
 
         & h4{
             text-align: center;
@@ -72,6 +87,38 @@
             flex-direction: column;
             background-image: linear-gradient(to right,rgb(72, 198, 240),rgb(226, 238, 240));
             padding: 0.2rem;
+            gap: 1rem;
+
+            & div{
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                align-items: center;
+
+                & div{
+                    align-items: baseline;
+
+                    & h4{
+                        position: absolute;
+                        margin: 0.2rem;
+                        padding: 0.2rem;
+                        font-size: 1rem;
+                        border-radius: 3px;
+                        background-color: rgb(187, 229, 241);
+                    }
+
+                }
+
+                & span{
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                }
+            }
+
+            & img{
+                height: 30rem;
+                width: 25rem;
+            }
 
             & p{
                 padding: 0.2rem;
@@ -80,40 +127,7 @@
             & h2{
                 text-align: center;
                 padding: 1rem;
-
-                & span{
-                    padding: 0.5rem;
-                    background-color: black;
-                    color: white;
-                }
-            }
-
-            & div{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-
-                & h4{
-                    @extend .subreflextitles;
-                }
-            }
-
-            &img1{
-                height: 25rem;
-                width: 40rem;
-                padding: 2rem;
-            }
-
-            &img2{
-                height: 30rem;
-                width: 25rem;
-                padding: 2rem;
-            }
-
-            &img3{
-                height: 30rem;
-                width: 25rem;
-                padding: 2rem;
+                font-weight: 900;
             }
 
             &div{
@@ -134,12 +148,10 @@
     }
 
     &titles{
-        font-style: oblique;
         font-size: 2rem;
         text-align: center;
-        background-color: white;
-        padding: 1rem;
         border-radius: 10px;
+        font-weight: 900;
     }
 
     &img{
@@ -150,11 +162,6 @@
             width: 45rem;
             height: 30rem;
         }
-    }
-
-    &span{
-        font-size: 1.6rem;
-        font-style: oblique;
     }
 
 }
