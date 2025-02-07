@@ -25,7 +25,7 @@ span{
 .grid{
     display: grid;
     grid-template-columns: 77% 23%;
-    grid-template-rows: 22% 71% auto;
+    grid-template-rows: 22% 80% auto;
     grid-template-areas: "header header"
                          "main aside"
                          "footer footer";
