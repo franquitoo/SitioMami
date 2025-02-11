@@ -90,12 +90,12 @@
     }
 
     &__anchor{
-        font-size: 1rem;
+        font-size: 2rem;
         background-color: none;
     }
 
     &__icon{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
 
@@ -109,8 +109,17 @@
     flex-direction: column;
 
     &__Img{
-        height: 3.7rem;
-        width: 3rem;
+        height: 4rem;
+        width: 3.5rem;
+        animation: none;
+
+        &4{
+            width: 7rem;
+        }
+    }
+
+    &__div{
+        gap: 1rem;
     }
 }
 

@@ -104,12 +104,10 @@
 
     &__p{
         font-size: 1.5rem;
-        font-family: "League Gothic", serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
         text-align: center;
+        font-family: "Cookie", serif;
+        font-weight: 600;
+        font-style: normal;
     }
 
     &__div{
@@ -119,10 +117,6 @@
     
     }
 
-    &__h3{   
-        text-align: center;
-    }
-
     .cc{
         width: 13rem;
     }
@@ -130,17 +124,36 @@
     &__contenedor{
         background-color: rgb(83, 156, 204);
         border-radius: 1rem;
+        animation: asidecontenedor 5s linear infinite 0s;
 
     &m{
         padding: 0.5rem;
+    }
+
+    @keyframes asidecontenedor {
+
+        50%{
+            color: rgb(40, 139, 206);
+            background-color: white;
         }
+    }
+
     }
 
     &__anchor{
         color: black;
-        font-size: 1.7rem;
         text-decoration: none;
-        
+        font-family: "Cookie", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 2rem;
+        animation: asideanchor 5s linear infinite 0s;
+    }
+    
+    @keyframes asideanchor {
+        50%{
+            color: rgb(30, 139, 211);
+        }
     }
 
     &__icon{
@@ -158,6 +171,95 @@
     &__Img{
         height: 4rem;
         width: 4rem;
+
+        &1{
+            animation: footerimg1 8s linear infinite 0s;
+        }
+
+        @keyframes footerimg1 {
+            25%{
+                transform: scale(1.3,1.3);
+            }
+
+            50%{
+                transform: scale(1,5.1,5);
+            }
+
+            75%{
+                scale: (1.3,1.3);
+            }
+
+            100%{
+                transform: scale(1.1);
+            }
+        }
+
+        &2{
+            animation: footerimg2 8s linear infinite 4s;
+        }
+
+        @keyframes footerimg2 {
+            25%{
+                transform: scale(1.3,1.3);
+            }
+
+            50%{
+                transform: scale(1,5.1,5);
+            }
+
+            75%{
+                scale: (1.3,1.3);
+            }
+
+            100%{
+                transform: scale(1.1);
+            }
+        }
+
+        &3{
+            animation: footerimg3 8s linear infinite 0s;
+        }
+
+        @keyframes footerimg3 {
+            25%{
+                transform: scale(1.3,1.3);
+            }
+
+            50%{
+                transform: scale(1,5.1,5);
+            }
+
+            75%{
+                scale: (1.3,1.3);
+            }
+
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        
+        &4{
+            width: 10rem;
+            animation: footerimg4 8s linear infinite 4s;
+        }
+
+        @keyframes footerimg4 {
+            25%{
+                transform: scale(1.3,1.3);
+            }
+
+            50%{
+                transform: scale(1,5.1,5);
+            }
+
+            75%{
+                scale: (1.3,1.3);
+            }
+
+            100%{
+                transform: scale(1.1);
+            }
+        }
     }
     
     &__anchor{
@@ -172,7 +274,7 @@
 
     &__div{
         display: flex;
-        gap: 1rem;
+        gap: 3rem;
         padding: 1rem;
     }
 
