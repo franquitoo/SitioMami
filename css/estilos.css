@@ -591,159 +591,178 @@ span {
       width: 4rem;
       transform: skew(-22deg); }
 
-.mentorado, .excusas, .gestion, .habitos, .tesis, .comu, .grupal {
+.mentorado, .excusas, .comunidad, .tesis, .gestion, .habitos, .grupal {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.5rem;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.74), rgba(5, 7, 12, 0.678)), url(/imagenes/fiambala.jpg);
-  background-size: 100% 100%;
-  color: white; }
-  .mentoradoh1 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 3rem;
-    margin-top: 1rem; }
-  .mentoradoh2 {
-    font-size: 2rem;
-    margin-left: 1rem; }
-  .mentoradop {
-    font-size: 1.3rem;
-    text-align: center;
-    padding: 0.7rem; }
-  .mentoradospan {
-    background-color: #8dd5eb;
-    padding: 0.2rem;
-    border-radius: 0.5rem;
-    color: black; }
-  .mentoradodiv {
+  align-items: center;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
+  background-size: 100%; }
+  .mentorado section, .excusas section, .comunidad section, .tesis section, .gestion section, .habitos section, .grupal section {
+    padding: 3rem;
+    border-radius: 50%;
+    background-color: #5bdad3;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem; }
+    justify-content: space-evenly;
+    text-align: center; }
+    .mentorado section h1, .excusas section h1, .comunidad section h1, .tesis section h1, .gestion section h1, .habitos section h1, .grupal section h1, .mentorado section span, .excusas section span, .comunidad section span, .tesis section span, .gestion section span, .habitos section span, .grupal section span, .mentorado section h2, .excusas section h2, .comunidad section h2, .tesis section h2, .gestion section h2, .habitos section h2, .grupal section h2 {
+      font-family: "Sniglet", serif;
+      font-weight: 400;
+      font-style: normal; }
+    .mentorado section h1, .excusas section h1, .comunidad section h1, .tesis section h1, .gestion section h1, .habitos section h1, .grupal section h1 {
+      animation: mentoradoh1 1s ease-in-out forwards 1s; }
 
-.excusash1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+@keyframes mentoradoh1 {
+  100% {
+    background-color: #5bdad3;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem; } }
+    .mentorado section h2, .excusas section h2, .comunidad section h2, .tesis section h2, .gestion section h2, .habitos section h2, .grupal section h2 {
+      padding-bottom: 0.8rem; }
+  .mentorado__circle__title {
+    height: 65vh;
+    width: 65vh;
+    animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
 
-.excusash2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+@keyframes mentoradocircletitle {
+  100% {
+    background-color: white;
+    border: 3px solid #5bdad3;
+    margin-left: 1rem;
+    transform: scale(1.1); } }
+  .mentorado__circle__text {
+    height: 100vh;
+    width: 100vh;
+    animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
+    .mentorado__circle__text p {
+      padding: 1rem; }
 
-.excusasp {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem; }
+@keyframes mentoradocircletext {
+  100% {
+    background-color: white;
+    border: 3px solid #5bdad3;
+    margin-left: 1rem; } }
 
-.excusasimg {
-  width: 20rem;
-  height: 15rem;
-  padding: 1rem; }
+.excusas h1, .excusas span, .excusas h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
 
-.excusasdiv {
-  display: flex;
-  justify-content: center; }
+.excusas h2 {
+  padding-bottom: 0.8rem; }
 
-.gestionh1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+.excusas__circle__title {
+  height: 60vh;
+  width: 60vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
 
-.gestionh2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+.excusas__circle__text {
+  height: 85vh;
+  width: 85vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
-.gestionp {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem; }
+.comunidad h1, .comunidad span, .comunidad h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
 
-.habitosh1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+.comunidad h2 {
+  padding-bottom: 0.8rem; }
 
-.habitosh2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+.comunidad ul {
+  list-style-type: none; }
 
-.habitosp {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem;
-  margin-top: 1rem; }
+.comunidad i {
+  padding: 0.2rem; }
 
-.tesisimg {
-  margin-bottom: 1rem; }
-  .tesisimgcont {
-    display: flex;
-    justify-content: center; }
+.comunidad__circle__title {
+  height: 70vh;
+  width: 70vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
 
-.tesish1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+.comunidad__circle__text {
+  height: 100vh;
+  width: 100vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
-.tesistitle {
-  font-size: 2.6rem;
-  padding: 1.5rem; }
+.tesis h1, .tesis span, .tesis h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
 
-.tesish2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+.tesis ul {
+  list-style-type: none; }
 
-.tesisp {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem; }
+.tesis i {
+  padding: 0.2rem; }
 
-.tesisul, .comuul {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-decoration: none;
-  margin-left: 1rem;
-  margin-top: 1rem; }
+.tesis h2 {
+  padding-bottom: 0.8rem; }
 
-.tesisli, .comuli {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  font-size: 1.2rem; }
+.tesis__circle__title {
+  height: 60vh;
+  width: 60vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
 
-.comuh1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+.tesis__circle__text {
+  height: 95vh;
+  width: 95vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
-.comuh2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+.gestion h1, .gestion span, .gestion h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
 
-.comup {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem; }
+.gestion h2 {
+  padding-bottom: 0.8rem; }
 
-.grupalh1 {
-  text-align: center;
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-top: 1rem; }
+.gestion__circle__title {
+  height: 65vh;
+  width: 65vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
 
-.grupalh2 {
-  font-size: 2rem;
-  margin-left: 1rem; }
+.gestion__circle__text {
+  height: 110vh;
+  width: 110vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
-.grupalp {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 0.7rem; }
+.habitos h1, .habitos span, .habitos h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.habitos h2 {
+  padding-bottom: 0.8rem; }
+
+.habitos__circle__title {
+  height: 65vh;
+  width: 65vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
+
+.habitos__circle__text {
+  height: 95vh;
+  width: 95vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
+
+.grupal h1, .grupal span, .grupal h2 {
+  font-family: "Sniglet", serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.grupal h2 {
+  padding-bottom: 0.8rem; }
+
+.grupal__circle__title {
+  height: 65vh;
+  width: 65vh;
+  animation: mentoradocircletitle 1s ease-in-out forwards 1s; }
+
+.grupal__circle__text {
+  height: 100vh;
+  width: 100vh;
+  animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .reflexiones {
   display: flex;
@@ -981,6 +1000,9 @@ span {
     color: black; }
   .background {
     background-image: linear-gradient(to bottom, #0bace2, #56cdeb); }
+  .grupalcont {
+    width: 90%;
+    flex-direction: column; }
   .subheader {
     display: flex;
     justify-content: space-evenly;
@@ -994,21 +1016,168 @@ span {
       flex-direction: column;
       align-items: baseline;
       margin-left: 0.5rem; }
-  .grupalcont {
+  .mentorado, .excusas, .comunidad, .tesis, .gestion, .habitos, .grupal {
     flex-direction: column;
-    width: 100%; }
-  .backgroundd {
-    background-image: linear-gradient(to bottom, #0bace2, #56cdeb);
-    border-top: 1px black solid; }
-  .propmain__titulo {
-    color: black; }
-  .grupimgp {
-    color: black; }
-  .subtitle {
-    font-size: 1.5rem; }
-    .subtitle2 {
-      font-size: 1rem;
-      text-align: center; }
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .mentorado section h2, .excusas section h2, .comunidad section h2, .tesis section h2, .gestion section h2, .habitos section h2, .grupal section h2 {
+      padding-bottom: 0rem; }
+    .mentorado h1, .excusas h1, .comunidad h1, .tesis h1, .gestion h1, .habitos h1, .grupal h1 {
+      font-size: 1.1rem; }
+    .mentorado h2, .excusas h2, .comunidad h2, .tesis h2, .gestion h2, .habitos h2, .grupal h2 {
+      font-size: 0.9rem; }
+    .mentorado p, .excusas p, .comunidad p, .tesis p, .gestion p, .habitos p, .grupal p {
+      font-size: 0.7rem; }
+    .mentorado span, .excusas span, .comunidad span, .tesis span, .gestion span, .habitos span, .grupal span {
+      font-size: 0.8rem; }
+    .mentorado__circle__title {
+      height: 30vh;
+      width: 70%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .mentorado__circle__text {
+      height: 42.5vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  @keyframes propcelu {
+    100% {
+      border: 3px #5bdad3 solid;
+      background-color: white; } }
+  .excusas {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .excusas section h2 {
+      padding-bottom: 0rem; }
+    .excusas h1 {
+      font-size: 1.1rem; }
+    .excusas h2 {
+      font-size: 0.9rem; }
+    .excusas p {
+      font-size: 0.7rem; }
+    .excusas span {
+      font-size: 0.8rem; }
+    .excusas__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .excusas__circle__text {
+      height: 40vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  .tesis {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .tesis section h2 {
+      padding-bottom: 0rem; }
+    .tesis h1 {
+      font-size: 1.1rem; }
+    .tesis h2 {
+      font-size: 0.9rem; }
+    .tesis p {
+      font-size: 0.7rem; }
+    .tesis span {
+      font-size: 0.8rem; }
+    .tesis i {
+      font-size: 8px; }
+    .tesis__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .tesis__circle__text {
+      height: 50vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  .comunidad {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .comunidad section h2 {
+      padding-bottom: 0rem; }
+    .comunidad h1 {
+      font-size: 1.1rem; }
+    .comunidad h2 {
+      font-size: 0.9rem; }
+    .comunidad p {
+      font-size: 0.7rem; }
+    .comunidad span {
+      font-size: 0.8rem; }
+    .comunidad i {
+      font-size: 8px; }
+    .comunidad__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .comunidad__circle__text {
+      height: 55vh;
+      width: 97%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  .habitos {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .habitos section h2 {
+      padding-bottom: 0rem; }
+    .habitos h1 {
+      font-size: 1rem; }
+    .habitos h2 {
+      font-size: 0.9rem; }
+    .habitos p {
+      font-size: 0.7rem; }
+    .habitos span {
+      font-size: 0.8rem; }
+    .habitos__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .habitos__circle__text {
+      height: 42.5vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  .gestion {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .gestion section h2 {
+      padding-bottom: 0rem; }
+    .gestion h1 {
+      font-size: 1.1rem; }
+    .gestion h2 {
+      font-size: 0.9rem; }
+    .gestion p {
+      font-size: 0.7rem; }
+    .gestion span {
+      font-size: 0.8rem; }
+    .gestion__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .gestion__circle__text {
+      height: 42.5vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+  .grupal {
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem;
+    gap: 1rem; }
+    .grupal section h2 {
+      padding-bottom: 0rem; }
+    .grupal h1 {
+      font-size: 1rem; }
+    .grupal h2 {
+      font-size: 0.9rem; }
+    .grupal p {
+      font-size: 0.7rem; }
+    .grupal span {
+      font-size: 0.8rem; }
+    .grupal__circle__title {
+      height: 30vh;
+      width: 75%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
+    .grupal__circle__text {
+      height: 42.5vh;
+      width: 95%;
+      animation: propcelu 2s ease-in-out forwards 0.5s; }
   .reflexionesdiv {
     flex-direction: column;
     align-items: center;

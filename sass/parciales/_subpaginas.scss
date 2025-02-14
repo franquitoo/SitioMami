@@ -45,197 +45,252 @@
 
 // main
 
-@mixin subtitulo{
-        text-align: center;
-        text-decoration: underline;
-        font-size: 3rem;
-        margin-top: 1rem;
-}
-
-@mixin subh2{
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-
-@mixin subp{
-        font-size: 1.3rem;
-        text-align: center;
-        padding: 0.7rem;
-}
-
 .mentorado{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    gap: 1.5rem;
-    background-image: linear-gradient(rgba(5, 7, 12, 0.74), rgba(5, 7, 12, 0.678)),url(/imagenes/fiambala.jpg);
-    background-size: 100% 100% ;
-    color: white;
+    align-items: center;
+    padding: 1rem;
+    background-image:linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
+    background-size: 100%;
+    
 
-    &h1{
-        @include subtitulo();
-    }
-
-    &h2{
-        @include subh2();
-    }
-
-    &p{
-        @include subp();
-    }
-
-    &span{
-        background-color: rgb(141, 213, 235);
-        padding: 0.2rem;
-        border-radius: 0.5rem;
-        color: black;
-    }
-
-    &div{
+    & section{
+        padding: 3rem;
+        border-radius: 50%;
+        background-color: rgb(91, 218, 211);
         display: flex;
         flex-direction: column;
-        gap: 0.7rem;
+        justify-content: space-evenly;
+        text-align: center;
+
+        & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        & h1{
+            animation: mentoradoh1 1s ease-in-out forwards 1s;
+        }
+
+        @keyframes mentoradoh1 {
+            100%{
+                background-color: rgb(91, 218, 211);
+                border-top-right-radius: 2rem;
+                border-top-left-radius: 2rem
+            }
+        }
+
+        & h2{
+            padding-bottom: 0.8rem;
+        }
+
     }
 
+    &__circle__title{
+        height: 65vh;
+        width: 65vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
+    }
+
+    @keyframes mentoradocircletitle {
+        100%{
+            background-color: white;
+            border: 3px solid rgb(91, 218, 211);
+            margin-left: 1rem;
+            transform: scale(1.1);
+        }
+    }
+
+    &__circle__text{
+        height: 100vh;
+        width: 100vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
+
+        & p{
+            padding: 1rem;
+        }
+    }
+
+    @keyframes mentoradocircletext{
+        100%{
+            background-color: white;
+            border: 3px solid rgb(91, 218, 211);
+            margin-left: 1rem;
+        }
+    }
 }
 
 .excusas{
     @extend .mentorado;
 
-    &h1{
-        @include subtitulo();
+    & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
     }
 
-    &h2{
-        @include subh2();
-    }
-    &p{
-        @include subp();
+    & h2{
+        padding-bottom: 0.8rem;
     }
 
-    &img{
-        width: 20rem;
-        height: 15rem;
-        padding: 1rem;
+    &__circle__title{
+        height: 60vh;
+        width: 60vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
     }
 
-    &div{
-        display: flex;
-        justify-content: center
+    &__circle__text{
+        height: 85vh;
+        width: 85vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
     }
 }
 
-.gestion{
+.comunidad{
     @extend .mentorado;
 
-    &h1{
-        @include subtitulo();
+    & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
     }
 
-    &h2{
-        @include subh2();
-    }
-    &p{
-        @include subp();
-    }
-}
-
-.habitos{
-    @extend .mentorado;
-
-    &h1{
-        @include subtitulo();
+    & h2{
+        padding-bottom: 0.8rem;
     }
 
-    &h2{
-        @include subh2();
+    & ul{
+        list-style-type: none;
     }
-    &p{
-        @include subp();
-        margin-top: 1rem;
+
+    & i{
+        padding: 0.2rem;
+    }
+
+
+    &__circle__title{
+        height: 70vh;
+        width: 70vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
+    }
+
+    &__circle__text{
+        height: 100vh;
+        width: 100vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
     }
 }
 
 .tesis{
     @extend .mentorado;
 
-    &img{
-        margin-bottom: 1rem;
-
-        &cont{
-            display: flex;
-            justify-content: center;
-        }
+    & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
     }
 
-    &h1{
-        @include subtitulo();
-       
+    & ul{
+        list-style-type: none;
     }
 
-    &title{
-        font-size: 2.6rem;
-        padding: 1.5rem;
+    & i{
+        padding: 0.2rem;
     }
 
-    &h2{
-        @include subh2();
-    }
-    &p{
-        @include subp();
+    & h2{
+        padding-bottom: 0.8rem;
     }
 
-    &ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        text-decoration: none;
-        margin-left: 1rem;
-        margin-top: 1rem;
+    &__circle__title{
+        height: 60vh;
+        width: 60vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
     }
 
-    &li{
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-        font-size: 1.2rem;
+    &__circle__text{
+        height: 95vh;
+        width: 95vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
     }
 }
 
-.comu{
+.gestion{
     @extend .mentorado;
 
-    &h1{
-        @include subtitulo();
+    & h1, span, h2{
+        font-family: "Sniglet", serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
-    &h2{
-        @include subh2();
-    }
-    &p{
-        @include subp();
+    & h2{
+        padding-bottom: 0.8rem;
     }
 
-    &ul{
-        @extend .tesisul;
+    &__circle__title{
+        height: 65vh;
+        width: 65vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
     }
 
-    &li{
-        @extend .tesisli;
+    &__circle__text{
+        height: 110vh;
+        width: 110vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
+    }
+}
+
+.habitos{
+    @extend .mentorado;
+
+    & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
+    }
+
+    & h2{
+        padding-bottom: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 65vh;
+        width: 65vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
+    }
+
+    &__circle__text{
+        height: 95vh;
+        width: 95vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
     }
 }
 
 .grupal{
     @extend .mentorado;
 
-    &h1{
-        @include subtitulo();
+    & h1, span, h2{
+            font-family: "Sniglet", serif;
+            font-weight: 400;
+            font-style: normal;
     }
 
-    &h2{
-        @include subh2();
+    & h2{
+        padding-bottom: 0.8rem;
     }
-    &p{
-        @include subp();
+
+    &__circle__title{
+        height: 65vh;
+        width: 65vh;
+        animation: mentoradocircletitle 1s ease-in-out forwards 1s;
+    }
+
+    &__circle__text{
+        height: 100vh;
+        width: 100vh;
+        animation: mentoradocircletext 1s ease-in-out forwards 0.5s;
     }
 }
+

@@ -242,6 +242,11 @@
     background-image: linear-gradient(to bottom, rgb(11, 172, 226),rgb(86, 205, 235));
 }
 
+.grupalcont{
+    width: 90%;
+    flex-direction: column;
+}
+
 .subheader{
     display: flex;
     justify-content: space-evenly;
@@ -261,30 +266,298 @@
     }
 }
 
-.grupalcont{
+.mentorado{
     flex-direction: column;
-    width: 100%;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1.1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 70%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 42.5vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    @keyframes propcelu {
+        100%{
+            border: 3px  rgb(91, 218, 211) solid;
+            background-color: white;
+        }
+    }
 }
 
-.backgroundd{
-    background-image: linear-gradient(to bottom, rgb(11, 172, 226),rgb(86, 205, 235));
-    border-top: 1px black solid;
+.excusas{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1.1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 40vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
 }
 
-.propmain__titulo{
-    color: black;
+.tesis{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1.1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    & i{
+        font-size: 8px;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 50vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
 }
 
-.grupimgp{
-    color: black;
+.comunidad{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1.1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    & i{
+        font-size: 8px;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 55vh;
+        width: 97%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
 }
 
-.subtitle{
-    font-size: 1.5rem;
+.habitos{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
 
-    &2{
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
         font-size: 1rem;
-        text-align: center;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 42.5vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+}
+
+.gestion{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1.1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 42.5vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+}
+
+.grupal{
+    flex-direction: column;
+    padding: 1rem 0rem 1rem 0rem ;
+    gap: 1rem;
+
+    & section{
+        & h2{
+            padding-bottom: 0rem;
+        }
+    }
+
+    & h1{
+        font-size: 1rem;
+    }
+
+    & h2{
+        font-size: 0.9rem;
+    }
+
+    & p{
+        font-size: 0.7rem;
+    }
+
+    & span{
+        font-size: 0.8rem;
+    }
+
+    &__circle__title{
+        height: 30vh;
+        width: 75%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
+    }
+
+    &__circle__text{
+        height: 42.5vh;
+        width: 95%;
+        animation: propcelu 2s ease-in-out forwards 0.5s;
     }
 }
 
