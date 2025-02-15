@@ -108,9 +108,7 @@ span {
   .aside__p {
     font-size: 1.3rem;
     text-align: center;
-    font-family: "Sniglet", serif;
-    font-weight: 400;
-    font-style: normal; }
+    font-weight: 800; }
   .aside__div {
     display: flex;
     flex-direction: column;
@@ -131,9 +129,7 @@ span {
   .aside__anchor {
     color: black;
     text-decoration: none;
-    font-family: "Sniglet", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 800;
     font-size: 1.8rem;
     animation: asideanchor 5s linear infinite 0s; }
 
@@ -391,9 +387,7 @@ span {
       background-color: white;
       color: #1aa5cf;
       width: 15rem;
-      font-family: "Sniglet", serif;
-      font-weight: 400;
-      font-style: normal;
+      font-weight: 800;
       transition: all 1.2s; }
 
 .background {
@@ -607,9 +601,7 @@ span {
     justify-content: space-evenly;
     text-align: center; }
     .mentorado section h1, .excusas section h1, .comunidad section h1, .tesis section h1, .gestion section h1, .habitos section h1, .grupal section h1, .mentorado section span, .excusas section span, .comunidad section span, .tesis section span, .gestion section span, .habitos section span, .grupal section span, .mentorado section h2, .excusas section h2, .comunidad section h2, .tesis section h2, .gestion section h2, .habitos section h2, .grupal section h2 {
-      font-family: "Sniglet", serif;
-      font-weight: 400;
-      font-style: normal; }
+      font-weight: 800; }
     .mentorado section h1, .excusas section h1, .comunidad section h1, .tesis section h1, .gestion section h1, .habitos section h1, .grupal section h1 {
       animation: mentoradoh1 1s ease-in-out forwards 1s; }
 
@@ -645,9 +637,7 @@ span {
     margin-left: 1rem; } }
 
 .excusas h1, .excusas span, .excusas h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .excusas h2 {
   padding-bottom: 0.8rem; }
@@ -663,9 +653,7 @@ span {
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .comunidad h1, .comunidad span, .comunidad h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .comunidad h2 {
   padding-bottom: 0.8rem; }
@@ -687,9 +675,7 @@ span {
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .tesis h1, .tesis span, .tesis h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .tesis ul {
   list-style-type: none; }
@@ -711,9 +697,7 @@ span {
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .gestion h1, .gestion span, .gestion h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .gestion h2 {
   padding-bottom: 0.8rem; }
@@ -729,9 +713,7 @@ span {
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .habitos h1, .habitos span, .habitos h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .habitos h2 {
   padding-bottom: 0.8rem; }
@@ -747,9 +729,7 @@ span {
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
 
 .grupal h1, .grupal span, .grupal h2 {
-  font-family: "Sniglet", serif;
-  font-weight: 400;
-  font-style: normal; }
+  font-weight: 800; }
 
 .grupal h2 {
   padding-bottom: 0.8rem; }
