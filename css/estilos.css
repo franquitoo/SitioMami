@@ -26,7 +26,7 @@ span {
 .youtube__grid {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 9.5% 86% auto;
+  grid-template-rows: 9.5% 87.5% auto;
   grid-template-areas: "header" "main" "footer"; }
 
 /* FINAL GENERAL */
@@ -411,153 +411,6 @@ span {
   align-items: center;
   gap: 1rem; }
 
-.trayectoria {
-  background-image: linear-gradient(to left, #72d0f0, #e5f9ff);
-  padding: 1rem; }
-
-.sec1, .sec2, .sec3 {
-  border: 1px black solid; }
-  .sec1div {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .sec1img {
-    width: 30rem;
-    height: 30rem;
-    padding: 0.3rem; }
-  .sec1list {
-    list-style-type: none;
-    padding-left: 0rem; }
-  .sec1li {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    margin-top: 0.5rem; }
-  .sec1minidviv {
-    grid-area: tex1; }
-    .sec1minidviv2 {
-      grid-area: img; }
-    .sec1minidviv3 {
-      grid-area: tex2; }
-  .sec1div2 {
-    display: grid;
-    grid-template-columns: auto 40% auto;
-    grid-template-rows: 100%;
-    grid-template-areas: "tex1 img tex2";
-    align-items: center;
-    padding: 1rem; }
-
-.sec2 {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem; }
-  .sec2div {
-    width: 50%;
-    padding: 2rem; }
-    .sec2divv {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly; }
-  .sec2span {
-    padding: 0.1rem;
-    background-color: #e3f4fa;
-    border-radius: 0.4rem;
-    margin-right: 0.5rem; }
-  .sec2h4 {
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline; }
-
-.sec3 {
-  padding: 1rem;
-  margin-top: 1rem; }
-  .sec3titles {
-    text-align: center; }
-  .sec3div {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    .sec3div2 {
-      display: flex;
-      flex-direction: column;
-      border: 1px solid black;
-      padding: 1rem; }
-      .sec3div2h4 {
-        text-align: center;
-        text-decoration: underline;
-        background-color: azure;
-        padding: 0.3rem;
-        border-radius: 1rem; }
-      .sec3div2cont {
-        display: grid;
-        grid-template-rows: 100%;
-        grid-template-columns: auto auto auto;
-        grid-template-areas: "mentoradeportiva mentoradehabitos mentoradeemprendedores";
-        gap: 1rem; }
-        .sec3div2cont1 {
-          grid-area: mentoradeportiva; }
-        .sec3div2cont2 {
-          grid-area: mentoradehabitos; }
-        .sec3div2cont3 {
-          grid-area: mentoradeemprendedores; }
-    .sec3div3 {
-      margin-top: 1rem; }
-      .sec3div3p {
-        text-align: center; }
-      .sec3div3divi {
-        border-top: 1px black solid;
-        padding-top: 1rem; }
-        .sec3div3divip {
-          padding-top: 1rem;
-          font-size: 1.2rem; }
-
-.contacto, .contactodiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
-  background-size: cover;
-  color: white; }
-  .contactodiv {
-    background-image: none;
-    gap: 2rem; }
-    .contactodiv div {
-      display: flex; }
-    .contactodiva {
-      display: flex;
-      color: white;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-      transition: all 0.3s; }
-    .contactodiva:hover {
-      transform: scale(1.2, 1.2); }
-  .contactoicon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem; }
-  .contactoh1 {
-    font-size: 4rem; }
-  .contactoh4 {
-    text-align: center;
-    padding: 0rem 1rem 0rem 1rem; }
-  .contactoform {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem; }
-  .contactoinput, .contactobutton {
-    padding: 1rem;
-    width: 40rem;
-    border-radius: 2rem;
-    color: black;
-    border: 3pz black solid; }
-  .contactobutton {
-    transition: all 1s; }
-    .contactobutton:hover {
-      color: white;
-      background-image: linear-gradient(to right, #9fd2df, #0077ff); }
-
 .subheader {
   display: flex;
   justify-content: space-evenly;
@@ -743,6 +596,153 @@ span {
   height: 100vh;
   width: 100vh;
   animation: mentoradocircletext 1s ease-in-out forwards 0.5s; }
+
+.trayectoria {
+  background-image: linear-gradient(to left, #72d0f0, #e5f9ff);
+  padding: 1rem; }
+
+.sec1, .sec2, .sec3 {
+  border: 1px black solid; }
+  .sec1div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .sec1img {
+    width: 30rem;
+    height: 30rem;
+    padding: 0.3rem; }
+  .sec1list {
+    list-style-type: none;
+    padding-left: 0rem; }
+  .sec1li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem; }
+  .sec1minidviv {
+    grid-area: tex1; }
+    .sec1minidviv2 {
+      grid-area: img; }
+    .sec1minidviv3 {
+      grid-area: tex2; }
+  .sec1div2 {
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "tex1 img tex2";
+    align-items: center;
+    padding: 1rem; }
+
+.sec2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem; }
+  .sec2div {
+    width: 50%;
+    padding: 2rem; }
+    .sec2divv {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+  .sec2span {
+    padding: 0.1rem;
+    background-color: #e3f4fa;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem; }
+  .sec2h4 {
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline; }
+
+.sec3 {
+  padding: 1rem;
+  margin-top: 1rem; }
+  .sec3titles {
+    text-align: center; }
+  .sec3div {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .sec3div2 {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      padding: 1rem; }
+      .sec3div2h4 {
+        text-align: center;
+        text-decoration: underline;
+        background-color: azure;
+        padding: 0.3rem;
+        border-radius: 1rem; }
+      .sec3div2cont {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "mentoradeportiva mentoradehabitos mentoradeemprendedores";
+        gap: 1rem; }
+        .sec3div2cont1 {
+          grid-area: mentoradeportiva; }
+        .sec3div2cont2 {
+          grid-area: mentoradehabitos; }
+        .sec3div2cont3 {
+          grid-area: mentoradeemprendedores; }
+    .sec3div3 {
+      margin-top: 1rem; }
+      .sec3div3p {
+        text-align: center; }
+      .sec3div3divi {
+        border-top: 1px black solid;
+        padding-top: 1rem; }
+        .sec3div3divip {
+          padding-top: 1rem;
+          font-size: 1.2rem; }
+
+.contacto, .contactodiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.671), rgba(5, 7, 12, 0.616)), url(/imagenes/mamieverest.jpeg);
+  background-size: cover;
+  color: white; }
+  .contactodiv {
+    background-image: none;
+    gap: 2rem; }
+    .contactodiv div {
+      display: flex; }
+    .contactodiva {
+      display: flex;
+      color: white;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      transition: all 0.3s; }
+    .contactodiva:hover {
+      transform: scale(1.2, 1.2); }
+  .contactoicon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; }
+  .contactoh1 {
+    font-size: 4rem; }
+  .contactoh4 {
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem; }
+  .contactoform {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem; }
+  .contactoinput, .contactobutton {
+    padding: 1rem;
+    width: 40rem;
+    border-radius: 2rem;
+    color: black;
+    border: 3pz black solid; }
+  .contactobutton {
+    transition: all 1s; }
+    .contactobutton:hover {
+      color: white;
+      background-image: linear-gradient(to right, #9fd2df, #0077ff); }
 
 .reflexiones {
   display: flex;
