@@ -47,7 +47,6 @@ span {
     background: url(/imagenes/fiambala.jpg);
     background-size: 100%; }
     .header nav a {
-      transition: all 0.5s;
       color: white;
       border: 1px white solid;
       border-radius: 2rem; }
@@ -71,8 +70,23 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 3rem; }
+  .main__paquete {
+    margin-top: 2rem;
+    position: static; }
+    .main__paquete a {
+      text-decoration: none; }
+    .main__paquete h1 {
+      color: black;
+      padding: 0.4rem;
+      border-radius: 1rem;
+      animation: paquete 2s ease-in-out infinite 1s; }
+
+@keyframes paquete {
+  50% {
+    background-color: red;
+    font-weight: 800;
+    color: white; } }
   .main__contenedor {
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem; }
@@ -855,6 +869,25 @@ span {
       width: 45rem;
       height: 30rem; }
 
+.paquete {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: linear-gradient(315deg, #549df0 0%, white 100%); }
+  .paquete section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .paquete section img {
+      height: 10%;
+      width: 25%;
+      border: #4e4848 2px solid;
+      border-radius: 1rem;
+      margin: 1.5rem;
+      box-shadow: 5px 5px 5px #549df0; }
+      .paquete section img:hover {
+        box-shadow: 5px 5px 5px black; }
+
 @media screen and (max-width: 430px) {
   .grid {
     display: flex;
@@ -878,6 +911,8 @@ span {
       .header nav a {
         color: black;
         border: none; }
+        .header nav a:hover {
+          padding: 0.2rem; }
   .navbar-nav {
     gap: 1rem;
     margin-bottom: 0rem; }
@@ -886,6 +921,8 @@ span {
   .main {
     background-image: linear-gradient(to bottom, white, #3c96d1);
     gap: 1.5rem; }
+    .main__paquete h1 {
+      font-size: 1rem; }
     .main__h3 {
       font-size: 1rem;
       max-width: 390px;
@@ -969,6 +1006,21 @@ span {
   .sec3div2cont {
     display: flex;
     flex-direction: column; }
+  .propmain__titulo h1 {
+    animation: none;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    width: 100%;
+    font-size: 1.3rem; }
+  .propmain__titulo__h1 {
+    animation: none;
+    font-size: 1.3rem;
+    background-color: #2aaeda;
+    color: black;
+    border-radius: 1rem;
+    padding: 0.3rem; }
   .propmain__div {
     display: flex;
     flex-direction: column;
@@ -979,9 +1031,14 @@ span {
   .propmain__minip {
     color: black; }
   .background {
-    background-image: linear-gradient(to bottom, #0bace2, #56cdeb); }
+    background-image: linear-gradient(to top, white 10%, #2aaeda); }
+    .backgroundd {
+      background-image: linear-gradient(to top, #2aaeda, white);
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .grupalcont {
-    width: 90%;
+    width: 100%;
     flex-direction: column; }
   .subheader {
     display: flex;
@@ -1192,4 +1249,10 @@ span {
     height: 15rem; }
     .subrefleximga {
       width: 23rem;
-      height: 15rem; } }
+      height: 15rem; }
+  .paquete section {
+    flex-direction: column;
+    align-items: center; }
+    .paquete section img {
+      width: 80%;
+      margin: 1rem; } }

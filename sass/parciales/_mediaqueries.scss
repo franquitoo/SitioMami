@@ -39,6 +39,11 @@
         & a{
             color: black;
             border: none;
+            
+            &:hover{
+                padding: 0.2rem;
+            }
+
         }
     }
 
@@ -58,6 +63,14 @@
 
    background-image: linear-gradient(to bottom,white,rgb(60, 150, 209));
    gap: 1.5rem;
+
+    &__paquete{
+
+        & h1{
+            font-size: 1rem;
+        }
+
+    }
 
 
     &__h3{
@@ -222,6 +235,27 @@
 
 // PROPUESTAS
 
+.propmain__titulo{
+    & h1{
+        animation: none;
+        background-color: white;
+        color: black;
+        border-radius: 1rem;
+        padding: 0.3rem;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+}
+
+.propmain__titulo__h1{
+        animation: none;
+        font-size: 1.3rem;
+        background-color: rgb(42, 174, 218);
+        color: black;
+        border-radius: 1rem;
+        padding: 0.3rem;
+}
+
 .propmain__div{
     display: flex;
     flex-direction: column;
@@ -239,11 +273,18 @@
 }
 
 .background{
-    background-image: linear-gradient(to bottom, rgb(11, 172, 226),rgb(86, 205, 235));
+    background-image: linear-gradient(to top, white 10%,rgb(42, 174, 218));
+
+    &d{
+        background-image: linear-gradient(to top, rgb(42, 174, 218), white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .grupalcont{
-    width: 90%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -630,4 +671,21 @@
     
 }
 
+// PAQUETE
+
+.paquete{
+
+    & section{
+        flex-direction: column;
+        align-items: center;
+
+        & img{
+            width: 80%;
+            margin: 1rem;
+        }
+    }
+
 }
+
+}
+
